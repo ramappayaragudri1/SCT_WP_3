@@ -1,0 +1,27 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Tic-Tac-Toe Web App</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>Tic-Tac-Toe</h1>
+  <div id="game-container">
+    <div id="game">
+      <div id="controls">
+        <label for="mode" id="mode-label">Game Mode:</label>
+        <select id="mode">
+          <option value="player">Player vs Player</option>
+          <option value="computer">Player vs Computer</option>
+        </select>
+      </div>
+      <div id="status"></div>
+      <div id="board"></div>
+      <button id="resetBtn">Reset Game</button>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

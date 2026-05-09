@@ -1,0 +1,132 @@
+
+/* style.css */
+body {
+  background: #23232b;
+  color: #fff;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+/* Container for centering */
+#game-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 80vh;
+  padding-top: 40px;
+}
+
+#game {
+  background: #2e2e3a;
+  border-radius: 20px;
+  padding: 32px 36px 28px 36px;
+  box-shadow: 0 8px 32px 0 #0005;
+  min-width: 320px;
+}
+
+h1 {
+  margin-top: 35px;
+  margin-bottom: 10px;
+  letter-spacing: 2px;
+  font-weight: 700;
+}
+
+#controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  margin-bottom: 32px;
+  margin-top: 6px;
+  background: #3a3ace;
+  padding: 12px 18px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px 0 rgba(193, 84, 84, 0.067);
+}
+
+#mode-label {
+  font-size: 1.07em;
+  margin-right: 12px;
+  color: #ffd369;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+
+#mode {
+  padding: 7px 16px;
+  border-radius: 6px;
+  border: none;
+  font-size: 1em;
+  background: #343445;
+  color: #23b394;
+  outline: none;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background 0.2s, color 0.2s;
+}
+#mode:hover, #mode:focus {
+  background: #43435a;
+}
+
+#board {
+  display: grid;
+  grid-template-columns: repeat(3, 65px);
+  grid-gap: 12px;
+  margin: 24px auto 24px auto;
+  max-width: 210px;
+}
+
+.square {
+  width: 65px;
+  height: 65px;
+  background: hsl(0, 3%, 7%);
+  color: #ffd369;
+  font-size: 2.2em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: background 0.2s, color 0.2s;
+  font-weight: 700;
+  box-shadow: 0 2px 10px 0 #0001;
+}
+
+.square:hover {
+  background: #43435a;
+  color: #b99a31;
+}
+
+#status {
+  margin-bottom: 6px;
+  min-height: 25px;
+  font-size: 1.23em;
+  font-weight: 600;
+  color: #bbf7ff;
+  letter-spacing: 1px;
+  padding: 6px;
+}
+
+#resetBtn {
+  padding: 10px 32px;
+  background: linear-gradient(to right, #e94a4a, #3a289e);
+  color: #23232b;
+  border: none;
+  border-radius: 7px;
+  cursor: pointer;
+  font-size: 1.03em;
+  font-weight: 600;
+  transition: background 0.2s, color 0.2s;
+  letter-spacing: 1px;
+  box-shadow: 0 2px 8px 0 #0001;
+}
+#resetBtn:hover {
+  background: linear-gradient(to right, #ffd369, #e94a4a);
+  color: #fff;
+}
